@@ -72,26 +72,44 @@
 										<p>Le FabLab<br />
 										</p>
 									</header>
-									<p>Ceci est une timeline de projet. Une création en cours...</p>
+							
+                                    <p>Ceci est une timeline de projet. Une création en cours...</p>
 								</div>
                                 <!--<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=12INszspiddiGRraMnzrrSQ2pvrIUtgMfMlFf8u-vkSM&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='800' frameborder='0'></iframe>
                                 -->
                                 <div id='timeline-embed' style="width: 100%; height: 600px" ></div>
+                                <div id='space' style="width: 100%; height: 100px" ></div>
+                                
+                                <h2>La Frise de vie de Fred</h2>
+                                
+                                <div id='timeline-embed2' style="width: 100%; height: 600px" ></div>
+                                
                                 <script src="Timelinejs3/compiled/js/timeline.js"></script>
+                               
                                 <script>
-                                var options = {
+                               
+								 var options = {
+    hash_bookmark: false,
+    initial_zoom: 3,
+	default_bg_color: {r:255, g:50, b:200},
+	timenav_height : 300
+	
+  }
+  var timeline = new TL.Timeline('timeline-embed2','https://docs.google.com/spreadsheets/d/1ehz_tZDVy5lzoGG4K-AhfkzYLVNQXxt2vd07ZN09Lqo/pubhtml', options);
+                                </script>
+                                
+                                
+	<script>
+	var options = {
     hash_bookmark: false,
     initial_zoom: 3,
 	default_bg_color: {r:0, g:150, b:200},
 	timenav_height : 300
 	
   }
-  var timeline = new TL.Timeline('timeline-embed',
-                                 'https://docs.google.com/spreadsheets/d/12INszspiddiGRraMnzrrSQ2pvrIUtgMfMlFf8u-vkSM/pubhtml',
-                                 options);
-
-                                </script>
-	
+  var timeline = new TL.Timeline('timeline-embed','https://docs.google.com/spreadsheets/d/12INszspiddiGRraMnzrrSQ2pvrIUtgMfMlFf8u-vkSM/pubhtml', options);
+                            
+     </script>
     
     						</section>
 
@@ -100,6 +118,8 @@
 								<div class="container">
 									<h3>ASMap</h3>
 									<p>Une oeuvre sous plusieurs calque</p>
+                                    <img src="images/carteF.jpg" width="100%" height="auto">
+                                    
 									<ul class="feature-icons">
 										<li class="fa-code">Write all the code</li>
 										<li class="fa-cubes">Stack small boxes</li>
