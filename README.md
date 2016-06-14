@@ -1,6 +1,5 @@
 # ASLab
 
-Living Lab sur la création d'une 3e Scene à L'avant-Scène Cognac
-Animé par le Collectif Or NOrmes
+Développement de la TimeLab et de la Carte Mentale 
 
-9 février 2016
+Juin 2016
